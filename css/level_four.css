@@ -1,0 +1,155 @@
+ @font-face {
+		 font-family: ting;
+		 src: url(../SentyCreamPuff.ttf);
+	}
+.body {  background-image: url("../img/game_back.jpg");
+		 background-repeat: no-repeat;
+		 background-size: cover;
+		 background-color: #D4D4D4;
+		 user-drag: none; 
+		  user-select: none;
+		  -moz-user-select: none;
+		  -webkit-user-drag: none;
+		  -webkit-user-select: none;
+		  -ms-user-select: none;
+	}
+.level{
+		font-size:4vw;
+		font-family:ting;
+		position: absolute;
+		left: 45%;
+		top:3%;
+		
+		
+}
+#myBar {
+			border: 3px solid 	#8B0000;
+			width: 64%;
+			height: 10%;
+			background-color: 		#8B0000;
+			text-align: center; /* To center it horizontally (if you want) */
+			line-height: 30px; /* To center it vertically */
+			color: white; 
+			font-family: ting;
+			font-size: 2vw;
+	}
+#myProgress {
+		  border: 3px solid 	#8B0000;
+	  
+		  position: absolute;
+		  left: 8%;
+		  top: 6%;
+		  width: 25%;
+		  background-color: 	#DEB887;
+	}
+.answer{
+			position: absolute;
+			left: 65%;
+			top:3%;
+			font-family: ting;
+	}
+#mylight{
+			height: 50%;
+			width: 40%;
+			user-drag: none; 
+			  user-select: none;
+			  -moz-user-select: none;
+			  -webkit-user-drag: none;
+			  -webkit-user-select: none;
+			  -ms-user-select: none;
+
+	}
+.answer-text{
+		font-size: 2.5vw;
+		position: absolute;
+		top:30%;
+
+	}
+.game{
+		position: absolute;
+		top: 20%;
+
+		font-family: ting;
+		height: 75%;
+		width: 100%;
+		
+}
+.game-text{
+	position: absolute;
+	left: 40%;
+	font-size: 2.5vw;
+	}
+
+ 
+ .myMOUSE {
+		
+		cursor: pointer;
+	}
+ #img1{
+		position:absolute;
+		top:20%;
+		left:20%;
+		user-drag: none; 
+		  user-select: none;
+		  -moz-user-select: none;
+		  -webkit-user-drag: none;
+		  -webkit-user-select: none;
+		  -ms-user-select: none;
+	}
+.unselectable{
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+.ui-widget-header{
+			background: rgb(255, 255, 255);
+			border: 1px solid white	;
+	}
+
+
+.ui-state-default{
+		background-color:none;
+		outline:none;
+		border:none;
+		box-shadow:none;
+}
+
+.ui-widget button {
+		font-family: ting;
+}
+.ui-dialog{
+		z-index:400;
+		font-family: ting;
+		font-size:20px;
+		text-align: center;
+		background: rgb(153, 204, 255);
+		/*Change the dialog border color here*/
+		border: 1px solid white	;
+}
+.ui-widget button {
+		font-family: ting;
+}
+#card_text{
+	z-index:100;
+	position: relative;
+	top:30%;
+	left:23%;
+	font-size:1.5vw;
+}
+#card_text2{
+	z-index:200;
+	position:relative;
+	top:40%;
+	left:23%;
+	font-size: 3.5vw;
+}
+.card_text3{
+	z-index:300;
+	position:relative;
+	top:60%;
+	left:60%;
+	font-size: 3.5vw;
+}

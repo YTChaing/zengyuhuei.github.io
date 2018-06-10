@@ -1,4 +1,4 @@
-  @font-face {
+@font-face {
 			     font-family: ting;
 			     src: url(../SentyCreamPuff.ttf);
 			}
@@ -75,7 +75,7 @@
 		}
 		.game-text{
 			position: absolute;
-			left: 20%;
+			left: 15%;
 			font-size: 2.5vw;
 			}
 
@@ -90,8 +90,10 @@
 			}	
 		 #img1{
 				position:absolute;
-				top:20%;
+				top:25%;
 				left:20%;
+				height:65%;
+				width:20%;
 				user-drag: none; 
 				  user-select: none;
 				  -moz-user-select: none;
@@ -101,8 +103,10 @@
 			}
 		#img2{
 				position:absolute;
-				top:20%;
-				left:60%;
+				top:25%;
+				left:50%;
+				height:60%;
+				width:25%;
 				user-drag: none; 
 				  user-select: none;
 				  -moz-user-select: none;
