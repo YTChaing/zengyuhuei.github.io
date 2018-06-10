@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<!-- Fig. 13.3: draw.html -->
+<!-- A simple drawing program. -->
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Level five</title>
+	   <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+	  <script src="./js/bootstrap.min.js" ></script>
+	  <link rel="stylesheet" href="./css/bootstrap.min.css" >
+	  <script type="text/javascript" src="./js/jquery-ui.min.js"></script>
+	  <link type="text/css" rel="stylesheet" href="./css/jquery-ui.min.css"/>
+	  <link rel="stylesheet" href="./css/level_five.css">
+	  <script src="./js/level_five.js"></script>
+   </head>
+
+   <body onload class = "body unselectable">
+	 <div class ="level">禮物</div>
+	 <div id="myProgress">
+	   <div id="myBar">5 / 6</div>
+	 </div>
+	 
+	 <div id="dialog" title="提示">
+	     <p>把文字"禮物"移到文字"小明"就可以過關囉!</p>
+	 </div>
+   	 <div id="win" title="win">
+	     <p>過關囉!</p>
+	     <button type="button" style = "z-index:0;"class="btn btn-outline-light text-dark" onclick="location.reload()">再玩一次</button>
+	     <button type="button" style = "z-index:1;" class="btn btn-outline-light text-dark" onclick="location.href = './level_six.html'">下一關</button>
+	 </div>
+
+	 <div class = "answer unselectable" id = "prompt">
+		 <img src="./img/light.png" id = "mylight">
+		 <span class = "answer-text">提示</span>
+	 </div>
+
+	 <div class = "game" id = "range">
+		 <span class = "game-text">今天<span ondrop="isDrop(event)" ondragover="allowDrop(event)" >小明</span>生日，趕快把你準備好的<span class="text_gift" draggable="true" ondragend="dropword(event)">禮物</span>　　 送給他吧</span>
+
+		 <img src="./img/gift2.png" class = "pic_gift" id ="gift" draggable="true" ondrag="dropimage(event)" ondragend="dropimage(event)" >
+		 
+		 <img src="./img/people.png" class = "pic_people" id ="people" draggable="true" ondrag="dropimage(event)" ondragend="dropimage(event)" >
+
+
+
+	
+	 </div>
+
+   </body>
+</html>
+
+<!--
+**************************************************************************
+* (C) Copyright 1992-2012 by Deitel & Associates, Inc. and               *
+* Pearson Education, Inc. All Rights Reserved.                           *
+*                                                                        *
+* DISCLAIMER: The authors and publisher of this book have used their     *
+* best efforts in preparing the book. These efforts include the          *
+* development, research, and testing of the theories and programs        *
+* to determine their effectiveness. The authors and publisher make       *
+* no warranty of any kind, expressed or implied, with regard to these    *
+* programs or to the documentation contained in these books. The authors *
+* and publisher shall not be liable in any event for incidental or       *
+* consequential damages in connection with, or arising out of, the       *
+* furnishing, performance, or use of these programs.                     *
+**************************************************************************
+-->

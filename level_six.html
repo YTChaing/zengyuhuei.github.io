@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<!-- Fig. 13.3: draw.html -->
+<!-- A simple drawing program. -->
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Level six</title>
+	  <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+	  <script src="./js/bootstrap.min.js" ></script>
+	  <link rel="stylesheet" href="./css/bootstrap.min.css" >
+	  <script type="text/javascript" src="./js/jquery-ui.min.js"></script>
+	  <link type="text/css" rel="stylesheet" href="./css/jquery-ui.min.css"/>
+	  <link rel="stylesheet" href="./css/level_six.css">
+	  <script src="./js/level_six.js"></script>
+   </head>
+
+   <body  class = "body unselectable">
+	 <div class ="level">蠟燭</div>
+	 <div id="myProgress">
+	   <div id="myBar">6 / 6</div>
+	 </div>
+	 
+	 <div id="dialog" title="提示">
+	     <p>卡片藏頭字</p>
+	 </div>
+   	 <div id="win" title="win">
+	     <p>過關囉!</p>
+	     <button type="button" style = "z-index:0;"class="btn btn-outline-light text-dark" onclick="location.reload()">再玩一次</button>
+	     <button type="button" style = "z-index:1;" class="btn btn-outline-light text-dark" onclick="location.href = './level_six.html'">下一關</button>
+	 </div>
+	 
+
+	 <div class = "answer " id = "prompt">
+		 <img src="./img/light.png" id = "mylight">
+		 <span class = "answer-text">提示</span>
+	 </div>
+
+	 <div class = "game unselectable" id = "range" >
+		 <span class = "game-text">既然卡片和禮物都送出去了，那可以開始吹蠟燭囉</span>
+		 <br>
+		 <br>
+		 
+		 <div class = "pic">
+	
+			 <img src="./img/b0.png" id ="0" class = "candle" onclick="clickCandle(this)" >
+			 <img src="./img/b1.png" id ="1" class = "candle" onclick="clickCandle(this)" >
+			 <img src="./img/b2.png" id ="2" class = "candle" onclick="clickCandle(this)" >
+			 <img src="./img/b3.png" id ="3" class = "candle" onclick="clickCandle(this)" >
+			 <img src="./img/b4.png" id ="4" class = "candle" onclick="clickCandle(this)" >
+			 <br>
+			 <img src="./img/b5.png" id ="5" class = "candle" onclick="clickCandle(this)" >
+			 <img src="./img/b6.png" id ="6" class = "candle" onclick="clickCandle(this)" >
+			 <img src="./img/b7.png" id ="7" class = "candle" onclick="clickCandle(this)" >
+			 <img src="./img/b8.png" id ="8" class = "candle" onclick="clickCandle(this)" >
+			 <img src="./img/b9.png" id ="9" class = "candle" onclick="clickCandle(this)" >
+		</div>
+	 </div>
+
+   </body>
+</html>
+
+<!--
+**************************************************************************
+* (C) Copyright 1992-2012 by Deitel & Associates, Inc. and               *
+* Pearson Education, Inc. All Rights Reserved.                           *
+*                                                                        *
+* DISCLAIMER: The authors and publisher of this book have used their     *
+* best efforts in preparing the book. These efforts include the          *
+* development, research, and testing of the theories and programs        *
+* to determine their effectiveness. The authors and publisher make       *
+* no warranty of any kind, expressed or implied, with regard to these    *
+* programs or to the documentation contained in these books. The authors *
+* and publisher shall not be liable in any event for incidental or       *
+* consequential damages in connection with, or arising out of, the       *
+* furnishing, performance, or use of these programs.                     *
+**************************************************************************
+-->
