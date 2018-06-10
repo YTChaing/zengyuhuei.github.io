@@ -19,21 +19,37 @@ function clickCandle(x) {
 		x.setAttribute("src", "./img/b" + x.id + ".png");
 		check[x.getAttribute("id")] = 0;
 	}
+	console.log(check);
+	console.log(checkWin());
 	
-	if(checkWin());
-	{
-		alert("win");
-	}
+	setTimeout(checkWin(), 300);
+	
 }
 
 function checkWin()
 {
 	if(check[0]===1 && check[1]===0 && check[2]===0 && check[3]===1 && check[4]===0 && check[5]===0 && check[6]===0 && check[7]===0 && check[8]===0 && check[9]===0)
-		return true;
-	return false;
+		$("#win").dialog("open");
 }
 
 $(function() {
+	$("#card").dialog({
+		draggable: false,
+		resizable: false,
+		autoOpen: false,
+		show: {
+			effect: "blind",
+			duration: 1000
+		},
+		hide: {
+			effect: "explode",
+			duration: 1000
+		},
+		
+		modal: true,
+		width: 1200
+	});
+	
 	$("#win").dialog({
 		closeOnEscape: false,
 		open: function(event, ui) {

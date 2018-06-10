@@ -20,7 +20,9 @@
 	 <div id="myProgress">
 	   <div id="myBar">6 / 6</div>
 	 </div>
-	 
+	 <div id="card">
+	     <img src="./img/card.jpg" >
+	 </div>
 	 <div id="dialog" title="提示">
 	     <p>卡片藏頭字</p>
 	 </div>
@@ -37,7 +39,7 @@
 	 </div>
 
 	 <div class = "game unselectable" id = "range" >
-		 <span class = "game-text">既然卡片和禮物都送出去了，那可以開始吹蠟燭囉</span>
+		 <span class = "game-text">既然<span onclick = '$("#card").dialog("open");'>卡片</span>和禮物都送出去了，那可以開始吹蠟燭囉</span>
 		 <br>
 		 <br>
 		 

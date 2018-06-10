@@ -22,10 +22,10 @@
 }
 
 #myBar {
-		border: 3px solid  rgb(255,255,255,0%);
+		border: 3px solid 	#8B0000;
 		width: 16.66%;
 		height: 10%;
-		background-color: rgb(39, 254, 244, 54%);
+		background-color:#8B0000;
 		text-align: center; /* To center it hertically */
 		color: white; /*orizontally (if you want) */
 		line-height: 30px; /* To center it v*/
@@ -37,7 +37,8 @@
 	  left: 8%;
 	  top: 6%;
 	  width: 25%;
-	  background-color: rgb(156, 170, 184, 70%);
+	  border: 3px solid 	#8B0000;
+	  background-color: 	#DEB887;
 }
 .answer{
 		position: absolute;
