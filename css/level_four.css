@@ -87,8 +87,8 @@
 	}
  #img1{
 		position:absolute;
-		top:20%;
-		left:20%;
+		top:10%;
+		left:15%;
 		user-drag: none; 
 		  user-select: none;
 		  -moz-user-select: none;
@@ -135,16 +135,16 @@
 #card_text{
 	z-index:100;
 	position: relative;
-	top:30%;
-	left:23%;
-	font-size:1.5vw;
+	top:23%;
+	left:20%;
+	font-size:1.8vw;
 }
 #card_text2{
 	z-index:200;
 	position:relative;
 	top:40%;
-	left:23%;
-	font-size: 3.5vw;
+	left:20%;
+	font-size: 3.7vw;
 }
 .card_text3{
 	z-index:300;
