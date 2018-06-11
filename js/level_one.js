@@ -57,8 +57,8 @@ function insertCock() {
 
 }
 
-let MoveSize = 10;
-let isClicked = 0;
+let MoveSize = 20;
+let isClicked =0;
 
 function clickCockroach(x) {
 	console.log(x);
@@ -104,8 +104,9 @@ let Xstep = 10;
 let Ystep = 10;
 
 function run(i) {
-	let MoveTop = Math.floor(10 + (Math.random() * MoveSize));
-	let MoveLeft = Math.floor(10 + (Math.random() * MoveSize));
+
+	let MoveTop = Math.floor((isClicked* 10)+ (Math.random() * MoveSize));
+	let MoveLeft = Math.floor((isClicked*10 )+ (Math.random() * MoveSize));
 
 
 
@@ -117,7 +118,7 @@ function run(i) {
 
 
 
-	if (currentX >= maxX - 10) {
+	if (currentX >= maxX - 100) {
 		Xstep = -MoveLeft;
 	}
 	if (currentX <= 0) {
@@ -125,7 +126,7 @@ function run(i) {
 	}
 
 
-	if (currentY <= 100) {
+	if (currentY <= 150) {
 		Ystep = MoveTop;
 	}
 	if (currentY >= 350) {
