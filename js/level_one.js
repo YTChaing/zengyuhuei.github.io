@@ -22,7 +22,7 @@ $(document).ready(function() {
 $(document).ready(function() {
 	$(".game").click(function() {
 		var sound = document.getElementById("hit");
-		
+		sound.play();
 		//console.log($(".game").css("cursor"));
 		$(".game").css("cursor", "url('./img/hit.png')50 50,auto");
 		//console.log($(".game").css("cursor"));
