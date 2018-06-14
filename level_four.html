@@ -13,8 +13,20 @@
 	  <link type="text/css" rel="stylesheet" href="./css/jquery-ui.min.css"/>
 	  <link rel="stylesheet" href="./css/level_four.css">
 	  <script src="./js/level_four.js"></script>
+	  <script src="./js/jquery.flip.min.js"></script>
    </head>
    <body onload class = "body">
+   <audio id = "audio" preload = "auto">
+         <source src = "./sound/light.mp3"
+            type = "audio/mpeg">
+       </audio>
+	   <audio id = "flip" preload = "auto">
+         <source src = "./sound/flip.mp3"
+            type = "audio/mpeg">
+       </audio>
+	   <audio id = "buttom" preload = "auto" >
+         <source src = "./sound/button-09.mp3" type = "audio/mpeg">
+      </audio>
 		<div id="dialog" title="提示">
 			 <p>請點選關卡名稱"卡片"</p>
 		 </div>
@@ -23,7 +35,8 @@
 			 <button type="button" class="btn btn-outline-light text-dark" onclick="location.reload()">再玩一次</button>
 			 <button type="button" class="btn btn-outline-light text-dark" onclick="location.href = './level_five.html'">下一關</button>
 		 </div>
-		 <div class ="level unselectable" onclick="next_page()">卡片</div>
+		 <div class ="level unselectable" onclick = '$(".flip").flip("toggle");var sound = document.getElementById("flip");
+		sound.play();'>卡片</div>
 		 <div id="myProgress">
 			<div id="myBar">4 / 6</div>
 		 </div>
@@ -33,27 +46,36 @@
 		 </div>
 		 <div class = "game" id = "range">
 		 <span class = "game-text unselectable">請幫我找出錯字。</span>
-		 <div id="card_text2" style='display:none;'>祝你一輩<span onclick="count(this)">自</span>開開心心，快快樂樂！！
-		 <br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<class="card_text3">小明<span onclick="count(this)">锼</span></div>
-		 <div id="card_text" class="myMOUSE" > 小明：<br>
-			嘿，恭喜你今天過<span onclick="count(this)">升</span>日啦，我們認識也<span onclick="count(this)">抄</span>過20年了，真的認識很久了呢，<br>
-			我覺得應該我要好好感謝你，你常常<span onclick="count(this)">再</span>我難過、傷心的時候幫助、照顧我，<br>
-			今天是你的生日，不管你以<span onclick="count(this)">候</span>遇到什麼事情都可以來找我，我希望你之後年<br>
-			年都開心，每年生日我都會幫你<span onclick="count(this)">凊</span>生的，不用擔心我會忘記，不過雖然你很<br>
-			三八，但對朋友真的很好，<span onclick="count(this)">廠廠</span>有事找你你都盡全力地幫我，雖然你常常偷我<br>
-			食物吃，不過我還是大人有大<span onclick="count(this)">諒</span>的原諒你吧，誰叫你是我最好的朋友呢，祝你<br>
-			歲歲平安、萬事如<span onclick="count(this)">益</span>，不對！應該是祝你生日快樂才對！！XDD<br>
+		 
+		 <div class="flip"> 
+			<div class="front"> 
+				<img src="./img/card3.jpg" id="img1" >
+				<div id="card_text" class="myMOUSE" > 小明：<br>
+					嘿，恭喜你今天過<span onclick="count(this)">升</span>日啦，我們認識也<span onclick="count(this)">抄</span>過20年了，真的認識很久了呢，<br>
+					我覺得應該我要好好感謝你，你常常<span onclick="count(this)">再</span>我難過、傷心的時候幫助、照顧我，<br>
+					今天是你的生日，不管你以<span onclick="count(this)">候</span>遇到什麼事情都可以來找我，我希望你之後年<br>
+					年都開心，每年生日我都會幫你<span onclick="count(this)">凊</span>生的，不用擔心我會忘記，不過雖然你很<br>
+					三八，但對朋友真的很好，<span onclick="count(this)">廠廠</span>有事找你你都盡全力地幫我，雖然你常常偷我<br>
+					食物吃，不過我還是大人有大<span onclick="count(this)">諒</span>的原諒你吧，誰叫你是我最好的朋友呢，祝你<br>
+					歲歲平安、萬事如<span onclick="count(this)">益</span>，不對！應該是祝你生日快樂才對！！XDD<br>
 
 
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;最好的朋友上
-		 </div>
-		 <img src="./img/card3.jpg" height="500" width="1000" id="img1" >
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;最好的朋友上
+				</div>
+			</div> 
+			<div class="back">
+				<div id="card_text2">祝你一輩<span onclick="count(this)">自</span>開開心心，快快樂樂！！
+					 <br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<class="card_text3">小明<span onclick="count(this)">锼</span></div>
+					 
+					 <img src="./img/card3.jpg"  id="img1" >
+			</div> 
+		</div>
    </body>
 </html>
 

@@ -3,14 +3,12 @@
 			src: url(../SentyCreamPuff.ttf);
 }
 
-body {  background-image: url("../img/background_p.jpg");
-		background-repeat: no-repeat;
-		background-size:cover;
+body {  
 		background-color:#D4D4D4;
 	 }
 .pos {
 		position: absolute;
-		left: 60%;
+		left: 55%;
 		top: 50%;
 	}
 
@@ -23,8 +21,8 @@ p h3{
     }
 .title{
 		position: absolute;
-		left: 40%;
-		top: 5%;
+		left: 35%;
+		top: 2%;
 	
 
 }
@@ -52,4 +50,23 @@ p h3{
 		-webkit-user-drag: none;
 		-webkit-user-select: none;
 		-ms-user-select: none;
+}
+.background{
+		position: absolute;
+		left: 10%;
+		top:0;
+
+		height:100%;
+		width:80%;
+		
+}
+.cakeGIF{
+	position: absolute;
+		left: 10%;
+		top:39%;
+		z-index :0;
+
+		
+		height:60%;
+		width:40%;
 }

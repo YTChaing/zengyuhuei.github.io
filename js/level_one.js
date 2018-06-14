@@ -1,6 +1,18 @@
+
 $(document).ready(function() {
 	$(".answer").mouseover(function() {
 		$("#mylight").attr("src", "./img/hover_light.jpg");
+		var sound = document.getElementById("audio");
+		sound.play();
+		
+		
+	})
+	$(".btn").mouseover(function() {
+		
+		var sound = document.getElementById("buttom");
+         sound.play();
+		
+		
 	})
 	$(".answer").mouseout(function() {
 		$("#mylight").attr("src", "./img/light.png");
@@ -9,6 +21,8 @@ $(document).ready(function() {
 
 $(document).ready(function() {
 	$(".game").click(function() {
+		var sound = document.getElementById("hit");
+		
 		//console.log($(".game").css("cursor"));
 		$(".game").css("cursor", "url('./img/hit.png')50 50,auto");
 		//console.log($(".game").css("cursor"));
@@ -105,8 +119,8 @@ let Ystep = 10;
 
 function run(i) {
 
-	let MoveTop = Math.floor((isClicked* 10)+ (Math.random() * MoveSize));
-	let MoveLeft = Math.floor((isClicked*10 )+ (Math.random() * MoveSize));
+	let MoveTop = Math.floor((isClicked* 4)+ (Math.random() * MoveSize));
+	let MoveLeft = Math.floor((isClicked* 3 )+ (Math.random() * MoveSize));
 
 
 

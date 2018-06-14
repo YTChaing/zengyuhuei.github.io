@@ -1,7 +1,22 @@
+
 $(document).ready(function() {
 $(".answer").mouseover(function() {
 	$("#mylight").attr("src", "./img/hover_light.jpg");
+	var sound = document.getElementById("audio");
+		sound.play();
+		
+		sound.currentTime=0;
 })
+
+$(".btn").mouseover(function() {
+		
+		var sound = document.getElementById("buttom");
+         sound.play();
+		
+		
+	})
+	
+	
 $(".answer").mouseout(function() {
 	$("#mylight").attr("src", "./img/light.png");
 })
@@ -74,3 +89,9 @@ function next_page()
 	  }
 	num2++;
 }
+
+$(function(){
+    $(".flip").flip({
+        trigger: 'manual'
+    });
+});

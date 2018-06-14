@@ -20,6 +20,17 @@
    </head>
 
    <body onload = "insertCock()" class = "body unselectable">
+    <audio id = "audio" preload = "auto">
+         <source src = "./sound/light.mp3"
+            type = "audio/mpeg">
+       </audio>
+	   <audio id = "buttom" preload = "auto" >
+         <source src = "./sound/button-09.mp3" type = "audio/mpeg">
+      </audio>
+	   <audio id = "hit" preload = "auto">
+         <source src = "./sound/hit.mp3"
+            type = "audio/mpeg">
+       </audio>
 	<span onclick = "for(var i=1;i<=10;i++){
 	var x = document.getElementById(i);
 	clickCockroach(x);}" style="height: 5px;width: 5px;position: absolute;top:0;left: 0;"></span>
@@ -28,8 +39,10 @@
 	 </div>
    	 <div id="win" title="win">
 	     <p>過關囉!</p>
-	     <button type="button" class="btn btn-outline-light text-dark" onclick="location.reload()">再玩一次</button>
-	     <button type="button" class="btn btn-outline-light text-dark" onclick="location.href = './level_two.html'">下一關</button>
+	     <button type="button" class="btn btn-outline-light text-dark" onclick="location.reload();var sound = document.getElementById('buttom');
+                sound.play();">再玩一次</button>
+	     <button type="button" class="btn btn-outline-light text-dark" onclick="location.href = './level_two.html';var sound = document.getElementById('buttom');
+                sound.play();">下一關</button>
 	 </div>
 	 <div class ="level unselectable">場地</div>
 	 <div id="myProgress" class="unselectable">

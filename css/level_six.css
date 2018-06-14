@@ -114,12 +114,12 @@
 		font-family: ting;
 		font-size:20px;
 		text-align: center;
-		background: rgb(153, 204, 255,70%);
+		background: rgb(153, 204, 255,90%);
 		/*Change the dialog border color here*/
 		border: 1px solid white	;
 }
 .ui-widget-header{
-		background: rgb(255, 255, 255,70%);
+		background: rgb(255, 255, 255,90%);
 		border: 1px solid white	;
 }
 
@@ -133,5 +133,11 @@
 
 .ui-widget button {
 		font-family: ting;
+}
+
+#card{
+	height:100%;
+
+
 }
 

@@ -8,16 +8,40 @@
       <title>index</title>
 	  <meta charset="utf-8">
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
 	  <link rel="stylesheet" href="./css/index.css">
       <script>
 		
 
-		//window.addEventListener( "load", createCanvas, false );
+		
+		$(document).ready(function() {
+			var index = document.getElementById("index");
+                index.play();
+				
+			$(".option").mouseover(function() {
+				var sound = document.getElementById("audio");
+                sound.play();
+				
+				sound.currentTime=0;
+			})
+			
+		});
 
 	  </script>
    </head>
    <body>
-	 <img src="./img/title.png" class = "title disdraggable" height="50%" width="50%">
+    
+	 
+	 <audio id = "audio" preload = "auto" >
+         <source src = "./sound/button-09.mp3" type = "audio/mpeg">
+      </audio>
+	   <audio id = "index" preload = "auto" >
+         <source src = "./sound/index.mp3" loop="1" type = "audio/mpeg">
+      </audio>
+
+     <img src="./img/background_p.jpg" class = "background disdraggable" >
+	 <img src="./img/title.png" class = "title disdraggable" height="55%" width="50%">
+	 <img src="./img/oie_trans.gif" class = "cakeGIF disdraggable" height="55%" width="50%">
 	 <div class = "pos">
 	   <p class = "option" onclick="location.href = './level_one.html'">開始遊戲</p>
 	  <p class = "option">說明文件</p>
