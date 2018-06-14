@@ -114,8 +114,8 @@ function createNewCock(i) {
 function rand(q) {
 	return Math.floor(Math.random() * (q + 1));
 }
-let Xstep = 10;
-let Ystep = 10;
+let Xstep = [10,10,10,10,10,10,10,10,10,10,10];
+let Ystep = [10,10,10,10,10,10,10,10,10,10,10];
 
 function run(i) {
 
@@ -133,22 +133,22 @@ function run(i) {
 
 
 	if (currentX >= maxX - 100) {
-		Xstep = -MoveLeft;
+		Xstep[i] = -MoveLeft;
 	}
 	if (currentX <= 0) {
-		Xstep = MoveLeft;
+		Xstep[i] = MoveLeft;
 	}
 
 
 	if (currentY <= 150) {
-		Ystep = MoveTop;
+		Ystep[i] = MoveTop;
 	}
 	if (currentY >= 350) {
-		Ystep = -MoveTop;
+		Ystep[i] = -MoveTop;
 	}
 
-	currentX += Xstep;
-	currentY += Ystep;
+	currentX += Xstep[i];
+	currentY += Ystep[i];
 
 	$("#" + i.toString()).css("left", currentX.toString() + "px");
 	$("#" + i.toString()).css("top", currentY.toString() + "px");
