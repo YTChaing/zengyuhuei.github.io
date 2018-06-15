@@ -15,8 +15,11 @@
 	  <script src="./js/level_five.js"></script>
    </head>
 
-   <body onload class = "body unselectable">
-   <audio id="audio" src="./img/light.mp3" autostart="true" ></audio>
+   <body id = 'body' onload class = "body unselectable">
+   <audio id = "audio" preload = "auto" >
+         <source src = "./sound/light.mp3" type = "audio/mpeg">
+     </audio>
+	  
    <audio id = "buttom" preload = "auto" >
          <source src = "./sound/button-09.mp3" type = "audio/mpeg">
       </audio>
@@ -39,12 +42,12 @@
 		 <span class = "answer-text">提示</span>
 	 </div>
 
-	 <div class = "game" id = "range">
+	 <div class = "game" id = "range"  ondragover="allowDrop(event)">
 		 <span class = "game-text">今<span ondrop="isDrop(event)" ondragover="allowDrop(event)" >天小明生</span>日，趕快把你準備好的<span class="text_gift" draggable="true" ondragend="dropword(event)">禮物</span>　　 送給他吧</span>
 
-		 <img src="./img/gift2.png" class = "pic_gift" id ="gift" draggable="true" ondrag="dropimage(event)" ondragend="dropimage(event)" >
+		 <img src="./img/gift2.png" class = "pic_gift" id ="gift"  ondragend="dropimage(event)" >
 		 
-		 <img src="./img/people.png" class = "pic_people" id ="people" draggable="true" ondrag="dropimage(event)" ondragend="dropimage(event)" >
+		 <img src="./img/people.png" class = "pic_people" id ="people"   ondragend="dropimage(event)" >
 
 
 

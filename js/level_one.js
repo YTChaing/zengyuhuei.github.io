@@ -78,6 +78,7 @@ function clickCockroach(x) {
 	console.log(x);
 	x.setAttribute("src", "./img/cockroach_dead.png");
 	x.setAttribute("onclick", "");
+	x.style.zIndex = -1;
 	clearInterval(interval[x.id]);
 	MoveSize += 5;
 	isClicked++;
