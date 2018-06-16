@@ -17,15 +17,21 @@
 	
    </head>
    <body onload class = "body">
-    <audio id = "audio" preload = "auto">
+	   <audio id = "audio" preload = "auto">
          <source src = "./sound/light.mp3"
             type = "audio/mpeg">
        </audio>
 	   <audio id = "buttom" preload = "auto" >
          <source src = "./sound/button-09.mp3" type = "audio/mpeg">
-      </audio>
+       </audio>
+	   <audio id = "laught" preload = "auto" >
+         <source src = "./sound/laught.mp3" type = "audio/mpeg">
+       </audio>
 		<div id="dialog" title="提示">
 			 <p>請點選文字的"美美的蛋糕</p>
+		 </div>
+		 <div id="haha" title="haha">
+			 <p>哈哈哈 你被騙啦~~</p>
 		 </div>
 		 <div id="win" title="win">
 			 <p>過關囉!</p>
@@ -42,9 +48,15 @@
 		 </div>
 		 <div class = "game" id = "range">
 		 <span class = "game-text unselectable"><br>現在我們需要一個蛋糕，下方有兩個蛋糕，請幫我點選<span onclick='isWin()'>美美的蛋糕</span>。</br></span>
-		 
-		 <img class="myMOUSE" src="./img/蛋糕.png" id="img1" >
-		 <img class="myMOUSE2" src="./img/黑糖去背.png" id="img2">
+		 <div class="game">
+			 <img class="myMOUSE" src="./img/蛋糕.png" id="img1"  >
+			 <img class="myMOUSE2" src="./img/黑糖去背.png" id="img2" draggable="true" ondrag="dropimage(event)" ondragend="dropimage(event)">
+			 <img class="myMOUSE2" src="./img/黑糖去背.png" id="img3" draggable="true" ondrag="dropimage(event)" ondragend="dropimage(event)">
+			 <img class="myMOUSE2" src="./img/黑糖去背.png" id="img4" draggable="true" ondrag="dropimage(event)" ondragend="dropimage(event)">
+			 <img class="myMOUSE2" src="./img/黑糖去背.png" id="img5" draggable="true" ondrag="dropimage(event)" ondragend="dropimage(event)">
+			 <img class="myMOUSE2" src="./img/黑糖去背.png" id="img6" draggable="true" ondrag="dropimage(event)" ondragend="dropimage(event)">
+			 <button type="button" id="haha2" onclick = '$("#haha").dialog("open");'>請按我!</button>
+		 <div>
    </body>
 </html>
 
