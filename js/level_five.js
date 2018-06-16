@@ -1,4 +1,4 @@
-
+console.log($("#body").css);
 $(document).ready(function() {
 	$(".answer").mouseover(function() {
 		$("#mylight").attr("src", "./img/hover_light.jpg");
