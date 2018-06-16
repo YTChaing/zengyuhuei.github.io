@@ -13,7 +13,11 @@
 		  -webkit-user-drag: none;
 		  -webkit-user-select: none;
 		  -ms-user-select: none;
+<<<<<<< HEAD
 		   overflow:hidden;
+=======
+		  overflow:hidden;
+>>>>>>> 67ecc5c37d8f5bf80c0dc1ad77f4573f4e2f4035
 	}
 .level{
 		font-size:4vw;
