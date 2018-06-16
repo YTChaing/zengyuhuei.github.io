@@ -72,10 +72,10 @@ var myVar;
 
 $(function(){
 	$("#shake_cola").click(function() {
-	  $(".ui-dialog").dialog('close');
-	  $( ".shake_p" ).effect( "shake" );
-	  
-	  myVar=setTimeout(shake_after, 300);
+      $( "#dialog" ).dialog( "close" );
+	 // $( ".shake_p" ).effect( "shake" );
+	  $(".shake_p").effect( "shake", { direction: "up", times: 10, distance: 50}, 2000 );
+	  myVar=setTimeout(shake_after, 2200);
 	});
 })
 function shake_after()
