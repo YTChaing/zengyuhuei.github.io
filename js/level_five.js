@@ -67,13 +67,14 @@ $(function() {
 	});
 });
 
-
+let id;
 function dropimage(event)
 {
-	console.log(event.srcElement.style.top);
+	//console.log(event.srcElement.style.top);
 	var x = event.clientX;
 	var y = event.clientY;
 	
+		
 	
 	
 	event.srcElement.style.top = (parseInt(y)-300)+"px";
@@ -81,12 +82,17 @@ function dropimage(event)
 
 	
 }
+function dragstart(event)
+{
+	id = event.srcElement.id;
+}
 
 function dropword(event)
 {
-	console.log(event);
+	//console.log(event);
 	var x = event.clientX;
 	var y = event.clientY;
+
 	event.srcElement.style.top = (parseInt(y)-event.srcElement.getBoundingClientRect().height/2-document.getElementsByClassName("game-text")[0].getBoundingClientRect().top)+"px";
 	event.srcElement.style.left = (parseInt(x)-event.srcElement.getBoundingClientRect().width/2-document.getElementsByClassName("game-text")[0].getBoundingClientRect().left)+"px";
 
@@ -96,9 +102,11 @@ function allowDrop(event) {
     event.preventDefault();
 }
 
-function isDrop(event)
+function isDrop(ev)
 {
-	$("#win").dialog("open");
+	 console.log(id);
+	 if(id == 'word')
+	   $("#win").dialog("open");
 }
 
 
