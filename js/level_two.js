@@ -88,7 +88,7 @@ $(function() {
 
 function dropimage(event)
 {
-	console.log(event.srcElement.style.top);
+	//console.log(event.srcElement.style.top);
 	var x = event.clientX;
 	var y = event.clientY;
 
