@@ -2,7 +2,10 @@ console.log($("#body").css);
 $(document).ready(function() {
 	$(".answer").mouseover(function() {
 		$("#mylight").attr("src", "./img/hover_light.jpg");
-	var sound = document.getElementById("audio");
+		
+	})
+	$(".answer").click(function() {
+		var sound = document.getElementById("audio");
 		sound.play();
 		
 		sound.currentTime=0;
