@@ -52,8 +52,8 @@ $(function() {
 			duration: 1000
 		},
 		hide: {
-			effect: "explode",
-			duration: 1000
+			/*effect: "explode",*/
+			duration: 0
 		},
 		/*buttons: {
 			"關閉": function() {
@@ -80,12 +80,14 @@ $(function(){
 })
 function shake_after()
 {	
-	
 	document.getElementById("pic_people3").src="./img/cola.png";
 	var sound = document.getElementById("cola_sound");
 	sound.play();
 	sound.currentTime=0;
-	
+	myVar=setTimeout(win, 500);
+}
+function win()
+{
 	$("#win").dialog("open");
 }
 
