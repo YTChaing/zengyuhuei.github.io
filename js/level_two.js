@@ -95,8 +95,8 @@ function dropimage(event)
 	var x = event.clientX;
 	var y = event.clientY;
 
-	event.srcElement.style.top = (parseInt(y)-300)+"px";
-	event.srcElement.style.left = (parseInt(x)-100)+"px";
+	event.srcElement.style.top = (parseInt(y)-450)+"px";
+	event.srcElement.style.left = (parseInt(x)-150)+"px";
 
 	
 }
