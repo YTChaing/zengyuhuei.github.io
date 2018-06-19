@@ -43,11 +43,11 @@
 	 </div>
 
 	 <div class = "game" id = "range"  ondragover="allowDrop(event)">
-		 <span class = "game-text">今<span ondrop="isDrop(event)" ondragover="allowDrop(event)" >天小明生</span>日，趕快把你準備好的<span class="text_gift" draggable="true" ondragend="dropword(event)">禮物</span>　　 送給他吧</span>
+		 <span class = "game-text">今<span id = "drop" ondrop="isDrop(event)" ondragover="allowDrop(event)" >天小明生</span>日，趕快把你準備好的<span id = "word" class="text_gift" draggable="true" ondragstart = "dragstart(event)" ondragend="dropword(event)">禮物</span>　　 送給他吧</span>
 
-		 <img src="./img/gift2.png" class = "pic_gift" id ="gift"  ondragend="dropimage(event)" >
+		 <img src="./img/gift2.png" class = "pic_gift" id ="gift"  ondragstart = "dragstart(event)" ondragend="dropimage(event)" >
 		 
-		 <img src="./img/people.png" class = "pic_people" id ="people"   ondragend="dropimage(event)" >
+		 <img src="./img/people.png" class = "pic_people" id ="people" ondragstart = "dragstart(event)"  ondragend="dropimage(event)" >
 
 
 

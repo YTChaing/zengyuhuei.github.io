@@ -3,150 +3,202 @@
 			     font-family: ting;
 			     src: url(../SentyCreamPuff.ttf);
 			}
-		.body {  background-image: url("../img/game_back.jpg");
-				 background-repeat: no-repeat;
-				 background-size: cover;
-				 background-color: #D4D4D4;
-				 user-drag: none; 
-				  user-select: none;
-				  -moz-user-select: none;
-				  -webkit-user-drag: none;
-				  -webkit-user-select: none;
-				  -ms-user-select: none;
-			}
-		.level{
-				font-size:4vw;
-				font-family:ting;
-				position: absolute;
-				left: 45%;
-				top:3%;
-				
-				
-		}
-		#myBar {
-					border: 3px solid 	#8B0000;
-					width: 32%;
-					height: 10%;
-					background-color: 		#8B0000;
-					text-align: center; /* To center it horizontally (if you want) */
-					line-height: 30px; /* To center it vertically */
-					color: white; 
-					font-family: ting;
-					font-size: 2vw;
-			}
-		#myProgress {
-				  border: 3px solid 	#8B0000;
-			  
-				  position: absolute;
-				  left: 8%;
-				  top: 6%;
-				  width: 25%;
-				  background-color: 	#DEB887;
-			}
-		.answer{
-					position: absolute;
-					left: 65%;
-					top:3%;
-					font-family: ting;
-			}
-		#mylight{
-					height: 50%;
-					width: 40%;
-					user-drag: none; 
-					  user-select: none;
-					  -moz-user-select: none;
-					  -webkit-user-drag: none;
-					  -webkit-user-select: none;
-					  -ms-user-select: none;
+.body {  background-image: url("../img/game_back.jpg");
+		 background-repeat: no-repeat;
+		 background-size: cover;
+		 background-color: #D4D4D4;
+		 user-drag: none; 
+		  user-select: none;
+		  -moz-user-select: none;
+		  -webkit-user-drag: none;
+		  -webkit-user-select: none;
+		  -ms-user-select: none;
+		   overflow:hidden;
 
-			}
-		.answer-text{
-				font-size: 2.5vw;
-				position: absolute;
-				top:30%;
-
-			}
-		.game{
-				position: absolute;
-				top: 20%;
-				font-family: ting;
-				height: 75%;
-				width: 100%;
-				
-		}
-		.game-text{
+	}
+.level{
+		font-size:4vw;
+		font-family:ting;
+		position: absolute;
+		left: 45%;
+		top:3%;
+		
+		
+}
+#myBar {
+			border: 3px solid 	#8B0000;
+			width: 32%;
+			height: 10%;
+			background-color: 		#8B0000;
+			text-align: center; /* To center it horizontally (if you want) */
+			line-height: 30px; /* To center it vertically */
+			color: white; 
+			font-family: ting;
+			font-size: 2vw;
+	}
+#myProgress {
+		  border: 3px solid 	#8B0000;
+	  
+		  position: absolute;
+		  left: 8%;
+		  top: 6%;
+		  width: 30%;
+		  background-color: 	#DEB887;
+	}
+.answer{
 			position: absolute;
-			left: 15%;
-			font-size: 2.5vw;
-			}
+			left: 65%;
+			top:3%;
+			font-family: ting;
+	}
+#mylight{
+		height: 50%;
+		width: 40%;
+		user-drag: none; 
+		  user-select: none;
+		  -moz-user-select: none;
+		  -webkit-user-drag: none;
+		  -webkit-user-select: none;
+		  -ms-user-select: none;
 
-		 
-	     .myMOUSE {
-				
-				cursor: pointer;
-			}
-	     .myMOUSE2{
-				
-				cursor: pointer;
-			}	
-		 #img1{
-				position:absolute;
-				top:25%;
-				left:20%;
-				height:65%;
-				width:20%;
-				user-drag: none; 
-				  user-select: none;
-				  -moz-user-select: none;
-				  -webkit-user-drag: none;
-				  -webkit-user-select: none;
-				  -ms-user-select: none;
-			}
-		#img2{
-				position:absolute;
-				top:25%;
-				left:50%;
-				height:60%;
-				width:25%;
-				user-drag: none; 
-				  user-select: none;
-				  -moz-user-select: none;
-				  -webkit-user-drag: none;
-				  -webkit-user-select: none;
-				  -ms-user-select: none;
-			}
-		.unselectable{
-			    -webkit-touch-callout: none;
-				-webkit-user-select: none;
-				-khtml-user-select: none;
-				-moz-user-select: none;
-				-ms-user-select: none;
-				user-select: none;
-			}
-		.ui-widget-header{
-					background: rgb(255, 255, 255,70%);
-					border: 1px solid white	;
-			}
+}
+.answer-text{
+	font-size: 2.5vw;
+	position: absolute;
+	top:30%;
+
+}
+.answer-text2{
+	font-size: 2.5vw;
+	position: absolute;
+	top:80%;
+
+}
+.game{
+		position: absolute;
+		top: 20%;
+		font-family: ting;
+		height: 75%;
+		width: 100%;
+		
+}
+.game-text{
+position: absolute;
+left: 15%;
+font-size: 2.5vw;
+}
+
+ 
+ .myMOUSE {
+		
+	cursor: pointer;
+}
+ .myMOUSE2{
+		
+	cursor: pointer;
+}	
+ #img1{
+	position:absolute;
+	top:20%;
+	left:20%;
+	height:80%;
+	width:20%;
+	user-drag: none; 
+	  user-select: none;
+	  -moz-user-select: none;
+	  -webkit-user-drag: none;
+	  -webkit-user-select: none;
+	  -ms-user-select: none;
+}
+#img2{
+	position:absolute;
+	top:25%;
+	left:50%;
+	height:70%;
+	width:25%;
+	z-index:10;
+}
+#img3{
+	position:absolute;
+	top:28%;
+	left:52%;
+	height:60%;
+	width:21.5%;
+	z-index:9;
+}
+#img4{
+	position:absolute;
+	top:31%;
+	left:54%;
+	height:50%;
+	width:17.8%;
+	z-index:8;
+}
+#img5{
+	position:absolute;
+	top:34%;
+	left:56%;
+	height:40%;
+	width:14.2%;
+	z-index:7;
+}
+#img6{
+	position:absolute;
+	top:37%;
+	left:58%;
+	height:30%;
+	width:10.7%;
+	z-index:6;
+}
+#haha2{
+	position:absolute;
+	top:46%;
+	left:61%;
+	background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+}
+#haha2:hover{background-color: #e7e7e7;}
+.unselectable{
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+.ui-widget-header{
+			background: rgb(255, 255, 255,70%);
+			border: 1px solid white	;
+	}
 
 
-		.ui-state-default{
-				background-color:none;
-				outline:none;
-				border:none;
-				box-shadow:none;
-		}
+.ui-state-default{
+		background-color:none;
+		outline:none;
+		border:none;
+		box-shadow:none;
+}
 
-		.ui-widget button {
-				font-family: ting;
-		}
-		.ui-dialog{
-				font-family: ting;
-				font-size:20px;
-				text-align: center;
-				background: rgb(153, 204, 255,70%);
-				/*Change the dialog border color here*/
-				border: 1px solid white	;
-		}
-		.ui-widget button {
-				font-family: ting;
-		}
+.ui-widget button {
+		font-family: ting;
+}
+.ui-dialog{
+		font-family: ting;
+		font-size:20px;
+		text-align: center;
+		background: rgb(153, 204, 255,70%);
+		/*Change the dialog border color here*/
+		border: 1px solid white	;
+}
+.ui-widget button {
+		font-family: ting;
+}
+.game{
+		position: absolute;
+	    top: 20%;
+	    font-family: ting;
+	    height: 75%;
+	    width: 100%;
+	    
+}

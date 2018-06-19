@@ -7,7 +7,7 @@
 .body {  background-image: url("../img/game_back.jpg");
 		background-repeat: no-repeat;
 		background-size: cover;
-
+		overflow:hidden;
 		background-color: #D4D4D4;
 
 }
@@ -23,21 +23,22 @@
 }
 
 #myBar {
-		border: 3px solid 	#8B0000;
-		width: 16.66%;
-		height: 10%;
-		background-color:#8B0000;
-		text-align: center; /* To center it hertically */
-		color: white; /*orizontally (if you want) */
-		line-height: 30px; /* To center it v*/
-		font-family: ting;
-		font-size: 2vw;
+		
+			border: 4px solid 	#8B0000;
+			width: 16.66%;
+			height: 14%;
+			background-color: 		#8B0000;
+			text-align: center; /* To center it horizontally (if you want) */
+			line-height: 30px; /* To center it vertically */
+			color: white; 
+			font-family: ting;
+			font-size: 2vw;
 }
 #myProgress {
       position: absolute;
 	  left: 8%;
 	  top: 6%;
-	  width: 25%;
+	  width: 30%;
 	  border: 3px solid 	#8B0000;
 	  background-color: 	#DEB887;
 }

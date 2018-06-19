@@ -2,6 +2,9 @@
 $(document).ready(function() {
 	$(".answer").mouseover(function() {
 		$("#mylight").attr("src", "./img/hover_light.jpg");
+		
+	})
+	$(".answer").click(function() {
 		var sound = document.getElementById("audio");
 		sound.play();
 		
@@ -52,8 +55,8 @@ $(function() {
 			duration: 1000
 		},
 		hide: {
-			effect: "explode",
-			duration: 1000
+			/*effect: "explode",*/
+			duration: 0
 		},
 		/*buttons: {
 			"關閉": function() {
@@ -68,37 +71,28 @@ $(function() {
 		$("#dialog").dialog("open");
 	});
 });
+var myVar;
 
-
-function dropimage(event)
-{
-	console.log(event.srcElement.style.top);
-	var x = event.clientX;
-	var y = event.clientY;
-	
-	
-	
-	event.srcElement.style.top = (parseInt(y)-300)+"px";
-	event.srcElement.style.left = (parseInt(x)-100)+"px";
-
-	
+$(function(){
+	$("#shake_cola").click(function() {
+      $( "#dialog" ).dialog( "close" );
+	 // $( ".shake_p" ).effect( "shake" );
+	  $(".shake_p").effect( "shake", { direction: "up", times: 10, distance: 50}, 2000 );
+	  myVar=setTimeout(shake_after, 2200);
+	});
+})
+function shake_after()
+{	
+	document.getElementById("pic_people3").src="./img/cola.png";
+	var sound = document.getElementById("cola_sound");
+	sound.play();
+	sound.currentTime=0;
+	myVar=setTimeout(win, 500);
 }
-
-function dropword(event)
-{
-	console.log(event);
-	var x = event.clientX;
-	var y = event.clientY;
-	event.srcElement.style.top = (parseInt(y)-event.srcElement.getBoundingClientRect().height/2-document.getElementsByClassName("game-text")[0].getBoundingClientRect().top)+"px";
-	event.srcElement.style.left = (parseInt(x)-event.srcElement.getBoundingClientRect().width/2-document.getElementsByClassName("game-text")[0].getBoundingClientRect().left)+"px";
-
-}
-
-function allowDrop(event) {
-    event.preventDefault();
-}
-
-function isDrop(event)
+function win()
 {
 	$("#win").dialog("open");
 }
+
+
+

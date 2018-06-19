@@ -6,7 +6,7 @@
    <head>
       <meta charset = "utf-8">
       <title>Level two</title> 
-	  	   <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+	  <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
 	  <script src="./js/bootstrap.min.js" ></script>
 	  <link rel="stylesheet" href="./css/bootstrap.min.css" >
 	  <script type="text/javascript" src="./js/jquery-ui.min.js"></script>
@@ -17,20 +17,26 @@
 	
    </head>
    <body onload class = "body">
-    <audio id = "audio" preload = "auto">
+	   <audio id = "audio" preload = "auto">
          <source src = "./sound/light.mp3"
             type = "audio/mpeg">
        </audio>
 	   <audio id = "buttom" preload = "auto" >
          <source src = "./sound/button-09.mp3" type = "audio/mpeg">
-      </audio>
+       </audio>
+	   <audio id = "laught" preload = "auto" >
+         <source src = "./sound/laught.mp3" type = "audio/mpeg">
+       </audio>
 		<div id="dialog" title="提示">
 			 <p>請點選文字的"美美的蛋糕</p>
+		 </div>
+		 <div id="haha" title="haha">
+			 <p>哈哈哈 你被騙啦~~</p>
 		 </div>
 		 <div id="win" title="win">
 			 <p>過關囉!</p>
 			 <button type="button" class="btn btn-outline-light text-dark" onclick="location.reload()">再玩一次</button>
-			 <button type="button" class="btn btn-outline-light text-dark" onclick="location.href = './level_four.html'">下一關</button>
+			 <button type="button" class="btn btn-outline-light text-dark" onclick="location.href = './level_three.html'">下一關</button>
 		 </div>
 		 <div class ="level unselectable">蛋糕</div>
 		 <div id="myProgress">
@@ -40,11 +46,17 @@
 			 <img src="./img/light.png" id = "mylight" >
 			 <span class = "answer-text">提示</span>
 		 </div>
-		 <div class = "game" id = "range">
+		 <div class = "game" id = "range"  ondragover="allowDrop(event)">
 		 <span class = "game-text unselectable"><br>現在我們需要一個蛋糕，下方有兩個蛋糕，請幫我點選<span onclick='isWin()'>美美的蛋糕</span>。</br></span>
-		 
-		 <img class="myMOUSE" src="./img/蛋糕.png" id="img1" >
-		 <img class="myMOUSE2" src="./img/黑糖去背.png" id="img2">
+		 <div class="game">
+			 <img class="myMOUSE" src="./img/蛋糕.png" id="img1"  >
+			 <img class="myMOUSE2" src="./img/黑糖去背.png" id="img2" draggable="true"  ondragend="dropimage(event)">
+			 <img class="myMOUSE2" src="./img/黑糖去背.png" id="img3" draggable="true"  ondragend="dropimage(event)">
+			 <img class="myMOUSE2" src="./img/黑糖去背.png" id="img4" draggable="true"  ondragend="dropimage(event)">
+			 <img class="myMOUSE2" src="./img/黑糖去背.png" id="img5" draggable="true"  ondragend="dropimage(event)">
+			 <img class="myMOUSE2" src="./img/黑糖去背.png" id="img6" draggable="true"  ondragend="dropimage(event)">
+			 <button type="button" id="haha2" onclick = '$("#haha").dialog("open");'>請按我!</button>
+		 <div>
    </body>
 </html>
 

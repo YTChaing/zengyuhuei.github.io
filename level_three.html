@@ -6,7 +6,7 @@
    <head>
       <meta charset = "utf-8">
       <title>Level three</title>
-	   <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+	  <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
 	  <script src="./js/bootstrap.min.js" ></script>
 	  <link rel="stylesheet" href="./css/bootstrap.min.css" >
 	  <script type="text/javascript" src="./js/jquery-ui.min.js"></script>
@@ -23,18 +23,21 @@
 	   <audio id = "buttom" preload = "auto" >
          <source src = "./sound/button-09.mp3" type = "audio/mpeg">
       </audio>
-	 <div class ="level">禮物</div>
+	  <audio id = "cola_sound" preload = "auto" >
+         <source src = "./sound/cola.mp3" type = "audio/mpeg">
+      </audio>
+	 <div class ="level">汽水</div>
 	 <div id="myProgress">
 	   <div id="myBar">3 / 6</div>
 	 </div>
 	 
 	 <div id="dialog" title="提示">
-	     <p>把文字"禮物"移到文字"小明"就可以過關囉!</p>
+	     <p>請讓可樂<span id="shake_cola">搖起來</span></p>
 	 </div>
    	 <div id="win" title="win">
 	     <p>過關囉!</p>
 	     <button type="button" style = "z-index:0;"class="btn btn-outline-light text-dark" onclick="location.reload()">再玩一次</button>
-	     <button type="button" style = "z-index:1;" class="btn btn-outline-light text-dark" onclick="location.href = './level_six.html'">下一關</button>
+	     <button type="button" style = "z-index:1;" class="btn btn-outline-light text-dark" onclick="location.href = './level_four.html'">下一關</button>
 	 </div>
 
 	 <div class = "answer unselectable" id = "prompt">
@@ -43,21 +46,12 @@
 	 </div>
 	
 	<div class = "game" id = "range">
-		 <span class = "game-text">我們現在需要一瓶汽水，但有三瓶是假裝成汽水的水，<br>幫我把真正地汽水找出來吧</span>
+		 <span class = "game-text">請幫我找出真正的汽水</span>
 	
-		<div class = "cola1_x">
-			 <img src="./img/cola2.png" class = "pic_cola1" id ="cola" draggable="true" ondrag="dropimage(event)" ondragend="dropimage(event)" >
-		</div>
-		<div class = "cola2_x">
-			 <img src="./img/cola2.png" class = "pic_cola2" id ="cola" draggable="true" ondrag="dropimage(event)" ondragend="dropimage(event)" >
-		</div>	 
-		<div class = "cola3_x">
-			 <img src="./img/cola2.png" class = "pic_cola3" id ="cola" draggable="true" ondrag="dropimage(event)" ondragend="dropimage(event)" >
-		</div>	 
-			 
-		<div class = "cola4_x">
-			 <img src="./img/cola2.png" class = "pic_cola4" id ="cola" draggable="true" ondrag="dropimage(event)" ondragend="dropimage(event)" >
-		</div>
+		 <img src="./img/cola2.png" id="pic_people1" class="shake_p">
+		 <img src="./img/cola2.png" id="pic_people2" class="shake_p">
+		 <img src="./img/cola2.png" id="pic_people3" class="shake_p"> 
+		 <img src="./img/cola2.png" id="pic_people4" class="shake_p">
 	</div> 
 	
 	 
